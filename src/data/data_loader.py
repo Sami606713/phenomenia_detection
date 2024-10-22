@@ -51,8 +51,8 @@ class GetData:
         train_data = CustomData(root_dir=self.train_data_path)
         test_data = CustomData(root_dir=self.test_data_path)
 
-        train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
-        test_loader = DataLoader(test_data, batch_size=32, shuffle=False)
+        train_loader = DataLoader(train_data, batch_size=16, shuffle=True)
+        test_loader = DataLoader(test_data, batch_size=16, shuffle=False)
 
         return train_loader, test_loader
 

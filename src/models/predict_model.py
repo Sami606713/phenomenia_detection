@@ -1,5 +1,4 @@
-from src.data.data_loader import data_loading
-
-
-if __name__ == "__main__":
-    data_loading()
+# This script is responsible for loading the model and making predictions on the test set.
+import torch 
+from torch import nn
+import mlflow
